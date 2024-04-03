@@ -11,5 +11,5 @@ Overall, the project explains how to develop a Django application, from startup 
 
 ### Authors 
 
-Jomari Mendoza
-Ian Jan Julito Aborot
+- Jomari Mendoza
+- Ian Jan Julito Aborot
