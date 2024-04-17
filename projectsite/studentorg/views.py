@@ -13,3 +13,9 @@ class OrganizationnList(ListView) :
     template_name = 'organization'
     paginate_by = 5
 # Create your views here.
+
+
+class OrganizationCreateView (CreateView):
+model = Organization
+form_class = OrganizationForm template_name = 'org_add.html'
+success_url = reverse_lazy( 'organization-list')
