@@ -1,8 +1,7 @@
-"""
-URL configuration for projectsite project.
+"""projectsite URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/5.0/topics/http/urls/
+    https://docs.djangoproject.com/en/3.2/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -16,10 +15,20 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+<<<<<<< HEAD
 from studentorg.views import HomePageView
+=======
+from studentorg.views import HomepageView, OrganizationList, OrganizationCreateView
+>>>>>>> 7710e4cb76d4c360b55336abced7aa947a6b7b0d
 from studentorg import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+<<<<<<< HEAD
     path('' , views.HomePageView.as_view(), name='home'),
+=======
+    path('', views.HomepageView.as_view(), name='home'),
+    path('organizational_list', OrganizationList.as_view(), name='organization-list'),
+    path('organization_list/add', OrganizationCreateView.as_view(), name='organization-add'),
+>>>>>>> 7710e4cb76d4c360b55336abced7aa947a6b7b0d
 ]
