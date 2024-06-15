@@ -14,7 +14,7 @@ class Command(BaseCommand):
     fake = Faker()
 
     for _ in range(count):
-      words = [fake.word() for _ in range(2)] # two words
+      words = [fake.word() for _ in range(2)]
       organization_name = ' '.join(words)
       Organization.objects.create(
         name = organization_name.title(),
